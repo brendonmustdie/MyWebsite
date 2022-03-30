@@ -1,0 +1,13 @@
+body {
+  font-family: "Lucida Console", monospace;
+  color: #dee0e3;
+  background-color: #556387;
+  font-size: 50px;
+}
+
+h1 {
+  font-size: 300px;
+  font-weight: bold;
+  height: 300px;
+  margin: 25px 50px;
+}

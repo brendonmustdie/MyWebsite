@@ -1,17 +1,44 @@
 body {
   font-family: "Lucida Console", monospace;
   color: #dee0e3;
-  background-color: #0b0c4f;
+  background: url(/Images/blueprint-6063929_960_720.jpg)
   
+}
+
+.about {
+  float: right;
+  width: 50%;
+  text-align: center;
+}
+
+.bracket{
+  font-size: 200px ;
 }
 
 .description {
   float: right;
-  width: 1000px;
+  width: 50%;
   font-size: 30px;
   padding-right: 30px;
 }
 
-.hyperlinks {
-  float: right;
+nav ul{
+  text-align: center;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a{
+  font-size: 20px;
+  color: #dee0e3;
+  text-decoration: none;
+}
+
+.brendon {
+  width: 50%;
+  font-size: 100px;
+  padding-left: 30px;
 }

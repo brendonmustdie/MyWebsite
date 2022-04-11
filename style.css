@@ -2,9 +2,15 @@ body {
   font-family: "Lucida Console", monospace;
   color: #dee0e3;
   background-color: #556387;
-  font-size: 50px;
 }
 
 .description {
+  float: right;
+  width: 1000px;
+  font-size: 30px;
+  padding-right: 30px;
+}
+
+.hyperlinks {
   float: right;
 }

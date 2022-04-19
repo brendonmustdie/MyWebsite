@@ -5,21 +5,16 @@ body {
   
 }
 
-.about {
-  float: right;
+.about{
   width: 50%;
-  text-align: center;
+}
+
+.text{
+  width: 50%;
 }
 
 .bracket{
   font-size: 200px ;
-}
-
-.description {
-  float: right;
-  width: 50%;
-  font-size: 30px;
-  padding-right: 30px;
 }
 
 nav ul{
@@ -37,8 +32,28 @@ nav ul li a{
   text-decoration: none;
 }
 
-.brendon {
-  width: 50%;
-  font-size: 100px;
-  padding-left: 30px;
+.description {
+  width: 30%;
+  font-size: 30px;
+  padding-left: 10px;
+  float:left;
 }
+
+.brackets {
+  width: 10%;
+  font-size: 250px;
+  float: left;
+  text-align: center;
+}
+
+.brendon {
+  float: left;
+  text-align: center;
+  width: 30%;
+  font-size: 100px;
+  padding-left: 10px;
+}
+
+
+
+

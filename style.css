@@ -50,10 +50,10 @@ nav ul li a{
 
 .port a:hover{
   color: #021736;
+  text-align: center;
 }
 
 .port{
-  
   background-color: #021736;
    padding: 15px;
   padding-left: 35px;

@@ -1,7 +1,6 @@
 body {
-  font-family: "Lucida Console", monospace;
-  color: #dee0e3;
-  background: url(/Images/blueprint-6063929_960_720.jpg)
+  font-family: "Helvtica NEw", sans-serif;
+  background: #608dd1;
   
 }
 
@@ -13,70 +12,141 @@ body {
   width: 50%;
 }
 
-.bracket{
-  font-size: 200px ;
-}
-
 nav ul{
   text-align: center;
   padding-top: 3%;
 }
 
 nav ul li{
+  background-color: #dee0e3;
+  padding: 10px;
+  border-radius: 25px;
   display: inline-block;
   margin-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+nav ul li:hover{
+  background-color: #0c2954;
+  
+}
+
+nav ul li a:hover{
+  color: #dee0e3;
 }
 
 nav ul li a{
   font-size: 20px;
-  color: #dee0e3;
+  text-decoration: none;
+  color: #021736;
+}
+
+.port a{
+  align-self: center;
+  color:#dee0e3;
   text-decoration: none;
 }
 
-.description {
-  width: 30%;
-  font-size: 30px;
-  padding-left: 10px;
-  float:left;
+.port a:hover{
+  color: #021736;
 }
 
-.brackets {
-  width: 10%;
-  font-size: 250px;
-  float: left;
+.port{
+  
+  background-color: #021736;
+   padding: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 27px; 
+  font-size: 25px; 
+  width: 6%;
+   margin: auto;
+   margin-bottom: -20px;
+   margin-top: 30px;
+
+}
+
+.port:hover{
+  background-color: #dee0e3;
+  color: #021736;
+}
+
+.description {
+  width: 45%;
+  font-size: 20px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+  color: #dee0e3;
+}
+
+.pic{
+  border-radius: 50%;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 65px;
+  align-self: center;
+  display: block;
 }
 
 .brendon {
-  float: left;
   text-align: center;
-  width: 30%;
-  font-size: 100px;
-  padding-left: 10px;
+  width: 90%;
+  font-size: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+  color: #dee0e3;
 }
+/* portfolio page*/
 
-
-div.gallery {
-  border: 1px solid #ccc;
-  padding: 10px;
+.leftcolumn {
   float: left;
-  width: 300px;
+  width: 30%;
+  padding: 1.5%;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+.middleColumn {
+  width: 30%;
+  padding: 1.5%;
+  float: left;
 }
 
-div.gallery img {
+.rightcolumn {
+  float: left;
+  width: 30%;
+  padding: 1.5%;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
   width: 100%;
-  height: auto;
+  padding: 20px;
 }
 
-div.feed {
-  width: 70%;
-  align-self: center;
- padding-left: 20%;
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
 }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
 
 /* blog page */
 .header {

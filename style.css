@@ -1,16 +1,12 @@
 body {
   font-family: "Helvtica NEw", sans-serif;
   background: #608dd1;
-  
 }
 
 .about{
   width: 50%;
 }
 
-.text{
-  width: 50%;
-}
 
 nav ul{
   text-align: center;
@@ -222,9 +218,11 @@ input[type=submit] {
   margin: auto;
 }
 
+/* style sheet */
 
-
-
+.style {
+  margin-top: 100px;
+}
 
 
 

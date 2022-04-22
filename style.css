@@ -1,6 +1,6 @@
 body {
-  font-family: "Helvtica NEw", sans-serif;
-  background: #608dd1;
+  font-family: "Arial", sans-serif;
+  background: #82A8C9;
 }
 
 .about{
@@ -125,7 +125,7 @@ nav ul li a{
   padding: 2%;
 }
 
-/* Fake image */
+
 .fakeimg {
   background-color: #aaa;
   width: 100%;

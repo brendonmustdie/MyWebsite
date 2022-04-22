@@ -159,6 +159,7 @@ nav ul li a{
   text-align: center;
   background: #ddd;
   margin-top: 5px;
+
 }
 
 
@@ -210,22 +211,20 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #021736;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
+  margin-bottom: 130px;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
 
 .container {
   border-radius: 5px;
   color: #dee0e3;
   padding: 10px;
-  width: 70%;
+  width: 60%;
   display: block;
   margin: auto;
 }

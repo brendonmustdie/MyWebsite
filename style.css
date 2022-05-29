@@ -1,7 +1,24 @@
 /* Home Page */
 
+.hello {
+  font-size: 150px;
+  color: #dee0e3;
+}
+
+.brendon {
+  float: left;
+  font-weight: bolder;
+  text-align: center;
+  width: 90%;
+  font-size: 70px;
+  color: #dee0e3;
+  margin-top: 15%;
+  margin-left: -10%;
+}
+
 body {
   font-family: "Arial", sans-serif;
+  font-style: bold;
   background: #A2BFDD;
 }
 
@@ -93,20 +110,7 @@ nav ul li a{
   align-self: center;
   display: block;
 }
-.hello {
-  margin-bottom: -70px;;
-}
 
-.brendon {
-  text-align: center;
-  width: 90%;
-  font-size: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -50px;
-  color: #dee0e3;
-  margin-bottom: -60px;
-}
 /* portfolio page*/
 
 .leftcolumn {

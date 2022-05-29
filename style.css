@@ -38,7 +38,7 @@ nav ul li a{
   color: #021736;
 }
 
-.port a{
+.stuff a{
   align-self: center;
   color:#dee0e3;
   text-decoration: none;
@@ -46,11 +46,11 @@ nav ul li a{
   text-align: center;
 }
 
-.port a:hover{
+.stuff a:hover{
   color: #021736;
 }
 
-.port{
+.stuff{
   background-color: #021736;
    padding: 15px;
   padding-left: 0px;
@@ -65,7 +65,7 @@ nav ul li a{
 
 }
 
-.port:hover{
+.stuff:hover{
   background-color: #dee0e3;
   color: #021736;
 }
@@ -90,7 +90,7 @@ nav ul li a{
   align-self: center;
   display: block;
 }
-.h2 {
+.hello {
   margin-bottom: -70px;;
 }
 
@@ -150,7 +150,7 @@ nav ul li a{
   clear: both;
 }
 
-.footer {
+.sidebar {
   padding: 10px;
   text-align: center;
   background: #ddd;

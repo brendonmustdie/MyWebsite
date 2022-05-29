@@ -1,42 +1,45 @@
+/* Home Page */
+
 body {
   font-family: "Arial", sans-serif;
-  background: #82A8C9;
+  background: #A2BFDD;
 }
 
-.about{
-  width: 50%;
+.sidebar {
+  padding: 10px;
+  text-align: center;
+  margin-top: 5px
 }
-
 
 nav ul{
+  float: right;
+  list-style-type: none;
   text-align: center;
-  padding-top: 0;
+  padding-right: 15px;
+  padding-top: 15%;
+  padding-bottom: auto;
 }
 
 nav ul li{
-  background-color: #dee0e3;
   padding: 10px;
-  border-radius: 25px;
-  display: inline-block;
-  margin-right: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-nav ul li:hover{
-  background-color: #0c2954;
-  
-}
-
-nav ul li a:hover{
-  color: #dee0e3;
 }
 
 nav ul li a{
   font-size: 20px;
   text-decoration: none;
-  color: #021736;
+  color: #dee0e3;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .stuff a{
   align-self: center;
@@ -148,14 +151,6 @@ nav ul li a{
   content: "";
   display: table;
   clear: both;
-}
-
-.sidebar {
-  padding: 10px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 5px;
-
 }
 
 

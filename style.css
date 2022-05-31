@@ -93,13 +93,15 @@ overflow: hidden;
     color: #dddddd;
 }
 
-
-.gameEntry {
+.gameEntry{
   display: flex;
   flex-direction: row;
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 100px;
+}
+.blogEntry {
+  display: flex;
 }
 
 .secondaryImageContainer{

@@ -22,6 +22,10 @@ body {
   color: #dee0e3;
 }
 
+.brendon p {
+  margin: 0px;
+}
+
 .brendon {
   font-weight: bolder;
   text-align: left;
@@ -30,6 +34,7 @@ body {
   padding-bottom: 250px;
   font-size: 70px;
   color: #dee0e3;
+  margin: 0px;
 }
 
 
@@ -94,6 +99,7 @@ overflow: hidden;
   flex-direction: row;
   padding-left: 100px;
   padding-right: 100px;
+  padding-bottom: 100px;
 }
 
 .secondaryImageContainer{
@@ -105,131 +111,14 @@ overflow: hidden;
 }
 
 .pic1 {
-  width: auto;
+  width: 550px;
   height: 350px;
   flex-grow: 0;
+  object-fit: fill;
 }
 
 .pic2 {
-  width: auto;
+  width: 278px;
   height: 175px;
+  object-fit: fill;
 }
-
-
-/* portfolio page*/
-
-.leftcolumn {
-  float: left;
-  width: 33%;
-  padding: 2%;
-}
-
-.middleColumn {
-  float: left;
-  width: 33%;
-  padding: 2%;
- 
-}
-
-.rightcolumn {
-  float: left;
-  width: 33%;
-  padding: 2%;
-}
-
-
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-.gallImg {
-  width: 100px;
-  padding: 20px;
-  height: 200px;
-}
-
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-/* blog page */
-
-.blogposts {
-  align-self: center;
-  width: 75%;
-  margin: 10%;
-  margin-top: 50px;
-}
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* contact page */
-* {
-  box-sizing: border-box;
-}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #021736;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 130px;
-}
-
-
-.container {
-  border-radius: 5px;
-  color: #dee0e3;
-  padding: 10px;
-  width: 60%;
-  display: block;
-  margin: auto;
-}
-
-/* style sheet */
-
-.style {
-  margin-top: 100px;
-}
-
-
-
-
-
-

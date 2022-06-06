@@ -1,13 +1,41 @@
 /* Home Page */
 
-
-
-
-
 body {
   font-family: "Arial", sans-serif;
   font-style: bold;
   background-color: #6D8FB2;
+  color: #dee0e3;
+}
+
+.ring-body{
+padding-left: 300px;
+padding-right: 300px;
+}
+
+.ring-body h1{
+font-size: 100px;
+margin: 10px;
+}
+.ring-body h2{
+  font-size: 60px;
+  margin: 10px;
+}
+.ring-body h3{
+  font-size: 30px;
+}
+.mini-heading{
+  font-size: 20px;
+}
+
+.extra-info{
+  padding: 10px;
+background-color: #72A4B9;
+font-style: italic;
+}
+
+.head{
+  text-align: center;
+  font-weight: bolder;
 }
 
 .flex {

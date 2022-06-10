@@ -1,5 +1,10 @@
 /* Home Page */
 
+.wireframe{
+margin: 5px;
+background-color: #021736;
+}
+
 .button {
   margin: 50px;
 }
@@ -186,6 +191,18 @@ overflow: hidden;
   filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   border-radius: 0.375rem;
 }
+
+.pic4{
+  width: 550px;
+  height: 380px;
+  flex-grow: 0;
+  object-fit: cover;
+  margin: 10px;
+ filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  border-radius: 0.375rem;
+  float: left;
+}
+
 
 .pic5 {
   width: 100%;

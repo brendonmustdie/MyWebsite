@@ -11,281 +11,315 @@
     />
 
     <title>The One Ring</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
+   
   </head>
-</html>
+
 
 <body>
-  <div class="flex">
-    <div class="grow">
-      <div class="text-body">
-        <h1 class="head">The One Ring:</h1>
-        <h2 class="head">The Design Process:</h2>
-        <h3 class="head">Conceptualize 001:</h3>
-        <p>
-          I want to make a 3D ring, based on the Lord of the Rings ring, and I
-          want the player to be able to move it and play as the ring.
-        </p>
-        <p class="extra-info">
-          For a marker, not well accquinted with the ring: It makes the wearer
-          invisible to all beings, other than one other species - Ringwraiths.
-          It also has some emotional influence over it’s wearer, causing a
-          strong attachment to it. It’s got more too it - I’ll bring them up as
-          they become relevant.
-        </p>
-        <p class="mini-heading head">Research:</p>
-        <p>
-          I have a ring, so I played around with what it would be like to move
-          as the ring and also had a look online for what kind of ring movements
-          would be interesting and cool to play with. I also looked at coincs,
-          and tried rooling around a R5 coin to get an idea for what I wanted. I
-          settled on the two following kinds of movement: flipping, and rolling.
-          <br />
-          I also played "I am Bread" with an xbox controller. To get the idea of
-          what it’s like moving a sentient object - without arms or legs. I
-          thought it did an excellent job and definitely caused chaos by
-          requiring players to sync their controller movements to each corner of
-          the slice of bread.
-        </p>
-        <h3 class="head">Rapid Prototype:</h3>
-        <p>
-          The only real way to get this movement realistic and satisfying is to
-          make it a physics object. Earlier this year I wrestled with 3D
-          animation for a microbuild and let’s just say it’s easier using
-          physics. I used a 3D cylinder, that I made short, like a coin, and
-          turned on it’s side and used unity’s Constant Force component to get a
-          feel for what I needed to add.
-        </p>
+  
+  <div class="header2">
+    <video class="video-overlay" id="one-ring-video"  muted="muted">
+      <source src="Images/Prototype 0.03.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+  <div class="overlay ring-background-image" id="ring-background-overlay"></div>
+  <!-- Nav Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">MyWork</a></li>
+      <li><a href="aboutme.html">AboutMe</a></li>
+      <li><a href="blog1.html">MyBlog</a></li>
+    </ul>
+  </nav>
 
-        <p class="mini-heading head">Playtest and Iterate:</p>
-        <p>
-          Prototype 1.1: I spent a lot of time playtesting this, and settled on
-          the idea that until I could control it myself, I wouldn’t get a real
-          feel for what force I actually needed. At this point I’m worried the
-          ring will be too difficult to control. So I add a character
-          controller, and get rolling.
-        </p>
-
-        <p>
-          Prototype 1.2: The ring is a bit hard to turn, and I really want the
-          movement to feel dynamic and easy. The ring frequently falls over, and
-          it’s flipping movement is much slower, less smooth, and harder to
-          navigate. I need a way for the player to be able to spin the ring on
-          it’s edge.
-        </p>
-
-        <p>
-          Prototype 1.3: I tweaked the movement slightly, so now players can use
-          the triggers to turn the ring on it’s y axis. The sticks on a
-          controller move it’s x and z, respectively. I also find that I’m
-          unsure of how to implement this on mouse and keyboard but I’ll cross
-          that bridge when I get there - right now I’m having too much fun to
-          think.
-        </p>
-
-        <p>
-          Prototype 1.4:I’m still worried the movement is a little shaky but
-          it’s the shaky and unbalanced-ness that makes it fun to play around
-          with. But at this point I’m worried the cylinder has too many edges
-          and that’s messing with the smoothness of rolling. So I get a torus
-          from blender, make it gold for special effects, and use that as my
-          ring.
-        </p>
-
-        <p>
-          Prototype 1.5: This is amazing. The edges of the torus are almost
-          completely smooth, or at least smoother than the cylinder. It also
-          seems like the edge isn’t completely flat, making it virtually
-          impossible to stay upright - this adds an unexpected dynamic to the
-          movement. Spinning is a lot more fun and the struggle to stay upright
-          makes it way more fun to try and get upright at all. Having a lot of
-          fun. But I do have an issue here: There’s nothing to play with.
-        </p>
-
-        <img
-          class="pic5"
-          src="Images/OneRingSample.png"
-          alt="A screenshot of the one ring Prototype"
-        />
-
-        <p class="extra-info">
-          For a marker, not well accquinted with the ring: Gandalf thinks the
-          ring’s aim is to get back to it’s evil creator, and what the ring
-          influences people to do is determined by whether or not that will get
-          it closer to his creator. (I don’t think this is the case, but that
-          would theoretically be the ring’s objective in the game)
-        </p>
-        <p>
-          The ring’s movement is perfect to fit this concept, because the slow,
-          difficult, clumsy movement, might compel players to “get found” and
-          “worn” as the ring, which could be a fun idea to play with.
-        </p>
-        <p>
-          I completely forgot this but at some point I attached a camera and
-          gave players complete control over it. Oops.
-        </p>
-        <h3 class="head">Prototype 002:</h3>
-        <p>
-          Now that player’s can move, I can approach what actually draws me to
-          The One Ring. I’ve started reading the Lord of the Rings trilogy and
-          something that really gets me about the ring is that it’s mischevious
-          and sentient. The real back bone of this game would be all the
-          mischief the player could accomplish - and should accomplish.
-        </p>
-        <p>
-          I found some free to use 3D models of chess pieces and added
-          rigidbodies to them. I liked this concept because it showed the scale
-          of the ring and also gave playtesters something to push over and play
-          around with.
-        </p>
-
-        <p class="mini-heading head">Playtest and Iterate:</p>
-        <p>
-          Prototype 2.1: I spent lots and lots of time trying to push chess
-          pieces over, but as a ring half the size and weight of the chess
-          pieces I didn’t really have many choices. The actual moment I decided
-          to make a game based on the ring was the one I read a paragraph
-          describing when the ring resized itself*, slipped off a man’s finger,
-          and caused his death. So I added a button so that players could
-          scale-up and scale-down the ring - and set max and min sizes.
-        </p>
-        <p class="extra-info">*The ring can resize itself</p>
-
-        <img
-          class="pic5"
-          src="Images/OneRingGrow.png"
-          alt="A screenshot of the one ring Prototype"
-        />
-
-        <p>
-          Prototype 2.2: I am having the most fun making this game than I’ve
-          ever had making a game. There is a small technical error which is that
-          if you size up and down rapidly enough, sometimes players can glitch
-          through the floor. I’ve tried changing the rate at which it grows. But
-          any faster or any slower and the glitching happens even faster.
-          Another technical issue that I’m having is that the ring has a hole in
-          it, and the mesh doesn’t allow me to put a chess piece through that
-          hole - which is what most people would probably try. I’m going to talk
-          to my lecturer, Tim, about this in a consultation.
-        </p>
-        <p>
-          Other than that, the chess pieces make for a wonderful addition - I
-          can’t wait to have more objects to play around with. I do struggle
-          slightly to tip them over, so I’m going to play around with the mass
-          of the ring while I wait for my consulation with Tim.
-        </p>
-
-        <p>
-          Prototype 2.3: I tried just pushing the mass up all the way, but that
-          does make it much harder to move and while I cited that as a good
-          thing earlier, the ring is way too heavy to even think about mischief
-          and how it wobbles. Instead, now, the mass of the ring goes up while
-          the size of it does, which makes it much more noticeable that the ring
-          has grown.
-        </p>
-        <p>
-          Another concept that’s really interesting to me about the growth -
-          playing into wanting to be picked up - is that player’s can choose to
-          avoid detection if they remain small enough that NPCs cannot see them.
-          Which kind of makes me want to make the ring invisible, so I can’t
-          stop working quite yet.
-        </p>
-
-        <img
-          class="pic5"
-          src="Images/OneRingShrink.png"
-          alt="A screenshot of the one ring Prototype"
-        />
-
-        <h3 class="head">Prototype 003:</h3>
-        <p>
-          The ring makes it’s wearer invisible, so it’s stands to reason that it
-          should be able to make itself invisible too, right? At this point,
-          I’ve only spent like 3 hours on this microbuild and I don’t know what
-          to do with myself so I’m going to keep going. Invisibility should take
-          a while.
-        </p>
-        <p>
-          I wrote a script that faded in and out, between the two materials:
-          gold and transparent, and because of their different rendering modes,
-          this (in short) fucked everything. The ring was fine until you
-          switched to transparent and back - half the ring switched back to
-          gold, and the other half got stuck halfway. At some point, in
-          attempting to switch back and forth, I broke it so hard that the ring
-          wasn’t gold OR transparent - it simply had the grey-and-white check
-          pattern of “just pretend I’m transparent”.
-        </p>
-        <p class="mini-heading head">Playtest and Iterate:</p>
-        <p>
-          Prototype 3.1: I realized the issue was probably the different
-          rendering modes of the two materials, but there was no way for me to
-          change the rendering mode on the transparent material. So I changed it
-          on the gold material. Mistake. For some reason even when the ring was
-          gold it was trying to be transparent, so you could see the inside of
-          the ring from the outside.
-        </p>
-        <p>
-          Prototype 3.2: I realized the actual problem was that I was trying to
-          *fade between materials,* and I decided to give up on that dream.
-          Instead I wrote some code that moved directly between the materials,
-          without a fade. And that worked! Hurray!
-        </p>
-
-        <img
-          class="pic5"
-          src="Images/OneRingInvisible.png"
-          alt="A screenshot of the one ring Prototype"
-        />
-
-        <h3 class="head">Prototype 004:</h3>
-        <p>
-          I should go to bed, I should. It’s just that I’m having so much fun.
-          The ring makes itself invisible but because it also makes it’s wearer
-          invisible, I should write code for that too, while I’m here…
-        </p>
-        <p>
-          I wrote some code that would find objects the ring is touching when it
-          turns invisible, and add them to a dictionary. The array then gets run
-          through a function that turns that object invisible as well.
-        </p>
-        <p class="mini-heading head">Playtest and Iterate:</p>
-        <p>
-          Prototype 4.1: So this dictionary doesn’t account for items it’s
-          already touching when it turns invisible so I added that as well.
-          Also, another tech issue I’m having is that this doesn’t work on the
-          white chess pieces - it turns the “green felt” under them transparent
-          so I might have to just rework them in blender to change it, because
-          it seem the green felt is their parent object. So I just wrote a bool
-          into the array to check whether it already is in the array, and if it
-          isn’t, to add it.
-        </p>
-        <p>
-          Prototype 4.2: Perfect. This turns other objects invisible, in case I
-          wasn’t having fun before - I’m having a lot of fun now. Tomorrow I
-          have a consultation with Tim and I’ll bring up my tech issues with
-          him. For now, I’m going to sleep.
-        </p>
-
-        <img
-          class="pic5"
-          src="Images/OneRingChaos.png"
-          alt="A screenshot of the one ring Prototype"
-        />
-      </div>
-    </div>
-    <div class="shrink">
-      <div class="sidebar">
-        <nav>
-          <a href="index.html">
-            <div class="house">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-          </svg>
-        </div>
-        </a>
-      </div>
+  <!--Title-->
+  <div class="titles">
+    <div class="center-text">
+      <h2>
+       3D Ring Game
+      </h1>
     </div>
   </div>
+</div>
+
+
+<section> <div class="nav-vert">
+  <ul>
+    <h1>University Work:</h1>
+    <li><a href="oneRing.html">3D Ring Game</a></li>
+    <li><a href="procGen.html">Procedural<br> Generation</a></li>
+  </ul>
+</div>
+
+
+ <div class="work"> 
+  <h2 class="center-text">The One Ring:</h1>
+  <h2 class="center-text">The Design Process:</h2>
+  <h3 class="center-text">Conceptualize 001:</h3>
+  <p>
+    I want to make a 3D ring, based on the Lord of the Rings ring, and I
+    want the player to be able to move it and play as the ring.
+  </p>
+  <p class="extra-info">
+    For a marker, not well accquinted with the ring: It makes the wearer
+    invisible to all beings, other than one other species - Ringwraiths.
+    It also has some emotional influence over it’s wearer, causing a
+    strong attachment to it. It’s got more too it - I’ll bring them up as
+    they become relevant.
+  </p>
+  <p class="mini-heading head">Research:</p>
+  <p>
+    I have a ring, so I played around with what it would be like to move
+    as the ring and also had a look online for what kind of ring movements
+    would be interesting and cool to play with. I also looked at coincs,
+    and tried rooling around a R5 coin to get an idea for what I wanted. I
+    settled on the two following kinds of movement: flipping, and rolling.
+    <br />
+    I also played "I am Bread" with an xbox controller. To get the idea of
+    what it’s like moving a sentient object - without arms or legs. I
+    thought it did an excellent job and definitely caused chaos by
+    requiring players to sync their controller movements to each corner of
+    the slice of bread.
+  </p>
+  <h3 class="head">Rapid Prototype:</h3>
+  <p>
+    The only real way to get this movement realistic and satisfying is to
+    make it a physics object. Earlier this year I wrestled with 3D
+    animation for a microbuild and let’s just say it’s easier using
+    physics. I used a 3D cylinder, that I made short, like a coin, and
+    turned on it’s side and used unity’s Constant Force component to get a
+    feel for what I needed to add.
+  </p>
+
+  <p class="mini-heading head">Playtest and Iterate:</p>
+  <p>
+    Prototype 1.1: I spent a lot of time playtesting this, and settled on
+    the idea that until I could control it myself, I wouldn’t get a real
+    feel for what force I actually needed. At this point I’m worried the
+    ring will be too difficult to control. So I add a character
+    controller, and get rolling.
+  </p>
+
+  <p>
+    Prototype 1.2: The ring is a bit hard to turn, and I really want the
+    movement to feel dynamic and easy. The ring frequently falls over, and
+    it’s flipping movement is much slower, less smooth, and harder to
+    navigate. I need a way for the player to be able to spin the ring on
+    it’s edge.
+  </p>
+
+  <p>
+    Prototype 1.3: I tweaked the movement slightly, so now players can use
+    the triggers to turn the ring on it’s y axis. The sticks on a
+    controller move it’s x and z, respectively. I also find that I’m
+    unsure of how to implement this on mouse and keyboard but I’ll cross
+    that bridge when I get there - right now I’m having too much fun to
+    think.
+  </p>
+
+  <p>
+    Prototype 1.4:I’m still worried the movement is a little shaky but
+    it’s the shaky and unbalanced-ness that makes it fun to play around
+    with. But at this point I’m worried the cylinder has too many edges
+    and that’s messing with the smoothness of rolling. So I get a torus
+    from blender, make it gold for special effects, and use that as my
+    ring.
+  </p>
+
+  <p>
+    Prototype 1.5: This is amazing. The edges of the torus are almost
+    completely smooth, or at least smoother than the cylinder. It also
+    seems like the edge isn’t completely flat, making it virtually
+    impossible to stay upright - this adds an unexpected dynamic to the
+    movement. Spinning is a lot more fun and the struggle to stay upright
+    makes it way more fun to try and get upright at all. Having a lot of
+    fun. But I do have an issue here: There’s nothing to play with.
+  </p>
+
+
+  <p class="extra-info">
+    For a marker, not well accquinted with the ring: Gandalf thinks the
+    ring’s aim is to get back to it’s evil creator, and what the ring
+    influences people to do is determined by whether or not that will get
+    it closer to his creator. (I don’t think this is the case, but that
+    would theoretically be the ring’s objective in the game)
+  </p>
+  <p>
+    The ring’s movement is perfect to fit this concept, because the slow,
+    difficult, clumsy movement, might compel players to “get found” and
+    “worn” as the ring, which could be a fun idea to play with.
+  </p>
+  <p>
+    I completely forgot this but at some point I attached a camera and
+    gave players complete control over it. Oops.
+  </p>
+  <h3 class="head">Prototype 002:</h3>
+  <p>
+    Now that player’s can move, I can approach what actually draws me to
+    The One Ring. I’ve started reading the Lord of the Rings trilogy and
+    something that really gets me about the ring is that it’s mischevious
+    and sentient. The real back bone of this game would be all the
+    mischief the player could accomplish - and should accomplish.
+  </p>
+  <p>
+    I found some free to use 3D models of chess pieces and added
+    rigidbodies to them. I liked this concept because it showed the scale
+    of the ring and also gave playtesters something to push over and play
+    around with.
+  </p>
+
+  <p class="mini-heading head">Playtest and Iterate:</p>
+  <p>
+    Prototype 2.1: I spent lots and lots of time trying to push chess
+    pieces over, but as a ring half the size and weight of the chess
+    pieces I didn’t really have many choices. The actual moment I decided
+    to make a game based on the ring was the one I read a paragraph
+    describing when the ring resized itself*, slipped off a man’s finger,
+    and caused his death. So I added a button so that players could
+    scale-up and scale-down the ring - and set max and min sizes.
+  </p>
+  <p class="extra-info">*The ring can resize itself</p>
+
+  <img
+    class="pic5"
+    src="Images/OneRingGrow.png"
+    alt="A screenshot of the one ring Prototype"
+  />
+
+  <p>
+    Prototype 2.2: I am having the most fun making this game than I’ve
+    ever had making a game. There is a small technical error which is that
+    if you size up and down rapidly enough, sometimes players can glitch
+    through the floor. I’ve tried changing the rate at which it grows. But
+    any faster or any slower and the glitching happens even faster.
+    Another technical issue that I’m having is that the ring has a hole in
+    it, and the mesh doesn’t allow me to put a chess piece through that
+    hole - which is what most people would probably try. I’m going to talk
+    to my lecturer, Tim, about this in a consultation.
+  </p>
+  <p>
+    Other than that, the chess pieces make for a wonderful addition - I
+    can’t wait to have more objects to play around with. I do struggle
+    slightly to tip them over, so I’m going to play around with the mass
+    of the ring while I wait for my consulation with Tim.
+  </p>
+
+  <p>
+    Prototype 2.3: I tried just pushing the mass up all the way, but that
+    does make it much harder to move and while I cited that as a good
+    thing earlier, the ring is way too heavy to even think about mischief
+    and how it wobbles. Instead, now, the mass of the ring goes up while
+    the size of it does, which makes it much more noticeable that the ring
+    has grown.
+  </p>
+  <p>
+    Another concept that’s really interesting to me about the growth -
+    playing into wanting to be picked up - is that player’s can choose to
+    avoid detection if they remain small enough that NPCs cannot see them.
+    Which kind of makes me want to make the ring invisible, so I can’t
+    stop working quite yet.
+  </p>
+
+  <img
+    class="pic5"
+    src="Images/OneRingShrink.png"
+    alt="A screenshot of the one ring Prototype"
+  />
+
+  <h3 class="head">Prototype 003:</h3>
+  <p>
+    The ring makes it’s wearer invisible, so it’s stands to reason that it
+    should be able to make itself invisible too, right? At this point,
+    I’ve only spent like 3 hours on this microbuild and I don’t know what
+    to do with myself so I’m going to keep going. Invisibility should take
+    a while.
+  </p>
+  <p>
+    I wrote a script that faded in and out, between the two materials:
+    gold and transparent, and because of their different rendering modes,
+    this (in short) fucked everything. The ring was fine until you
+    switched to transparent and back - half the ring switched back to
+    gold, and the other half got stuck halfway. At some point, in
+    attempting to switch back and forth, I broke it so hard that the ring
+    wasn’t gold OR transparent - it simply had the grey-and-white check
+    pattern of “just pretend I’m transparent”.
+  </p>
+  <p class="mini-heading head">Playtest and Iterate:</p>
+  <p>
+    Prototype 3.1: I realized the issue was probably the different
+    rendering modes of the two materials, but there was no way for me to
+    change the rendering mode on the transparent material. So I changed it
+    on the gold material. Mistake. For some reason even when the ring was
+    gold it was trying to be transparent, so you could see the inside of
+    the ring from the outside.
+  </p>
+  <p>
+    Prototype 3.2: I realized the actual problem was that I was trying to
+    *fade between materials,* and I decided to give up on that dream.
+    Instead I wrote some code that moved directly between the materials,
+    without a fade. And that worked! Hurray!
+  </p>
+
+  <img
+    class="pic5"
+    src="Images/OneRingInvisible.png"
+    alt="A screenshot of the one ring Prototype"
+  />
+
+  <h3 class="head">Prototype 004:</h3>
+  <p>
+    I should go to bed, I should. It’s just that I’m having so much fun.
+    The ring makes itself invisible but because it also makes it’s wearer
+    invisible, I should write code for that too, while I’m here…
+  </p>
+  <p>
+    I wrote some code that would find objects the ring is touching when it
+    turns invisible, and add them to a dictionary. The array then gets run
+    through a function that turns that object invisible as well.
+  </p>
+  <p class="mini-heading head">Playtest and Iterate:</p>
+  <p>
+    Prototype 4.1: So this dictionary doesn’t account for items it’s
+    already touching when it turns invisible so I added that as well.
+    Also, another tech issue I’m having is that this doesn’t work on the
+    white chess pieces - it turns the “green felt” under them transparent
+    so I might have to just rework them in blender to change it, because
+    it seem the green felt is their parent object. So I just wrote a bool
+    into the array to check whether it already is in the array, and if it
+    isn’t, to add it.
+  </p>
+  <p>
+    Prototype 4.2: Perfect. This turns other objects invisible, in case I
+    wasn’t having fun before - I’m having a lot of fun now. Tomorrow I
+    have a consultation with Tim and I’ll bring up my tech issues with
+    him. For now, I’m going to sleep.
+  </p>
+
+  <img
+    class="pic5"
+    src="Images/OneRingChaos.png"
+    alt="A screenshot of the one ring Prototype"
+  />
+
+
+</div></section>
+ 
+
+
+  
+
+
+
+
+
+<script src="video.js"></script>
 </body>
+</html>

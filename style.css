@@ -1,19 +1,216 @@
-/* Home Page */
-
-.wireframe{
-margin: 5px;
-background-color: #021736;
-}
-
-.button {
-  margin: 50px;
-}
+/*home*/
 
 body {
-  font-family: "Arial", sans-serif;
-  font-style: bold;
-  background-color: #6D8FB2;
-  color: #dee0e3;
+  font-family: 'Oswald', sans-serif;
+  color: black;
+}
+
+.overlay {
+  
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+   opacity: 1;
+ object-fit: cover;
+  z-index: 1;
+}
+
+.overlay-white {
+  background-color: white;
+  opacity: 20%;
+}
+.overlay-white2 {
+  background-color: white;
+  opacity: 40%;
+}
+
+@keyframes fade-out {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.fade-out {
+  animation-name: fade-out;
+  opacity: 0;
+  animation-duration: 2s;
+}
+
+.ring-background-image {
+  background-image: url(Images/OneRingChaos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video-overlay {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+ object-fit: cover;
+  z-index: 0;
+}
+
+.header {
+  position: relative;
+  background-image: url(Images/laptop_coffee_header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+}
+
+.titles {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0%;
+}
+
+/*nav*/
+
+.nav-vert {
+  width: 15%;
+  margin-left: 120px;
+  align-items: center;
+  display: inline;
+  float: left;
+}
+
+nav , .nav-vert { 
+  flex: none;
+  z-index: 2;
+}
+nav ul{
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  align-items: center;
+}
+
+nav ul li, .nav-vert ul li {
+  padding: 10px;
+  display: block;
+}
+
+nav ul li a{
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 30px;
+  color: black;
+}
+
+ .nav-vert ul li a{
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin: 30px;
+  color: black;
+}
+
+
+nav ul li a:hover , .nav-vert ul li a:hover{
+ 
+  color: gray;
+}
+
+
+.nav-vert ul{
+  display: block;
+  list-style-type: none;
+  margin-top: 100px;
+}
+
+
+/* sections */
+
+
+.section-image {
+  width: 100%;
+  border-radius: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  align-self: center;
+}
+
+.project-section {
+  width: 30%;
+ display: inline;
+ margin: 10px;
+ align-items: center;
+}
+
+.project-section p, .project-section h3 {
+  text-align: center;
+}
+
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*game pages*/
+
+.header2 {
+  position: relative;
+  background-image: url(Images/laptop_coffee_header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+ height: 50vh;
+ display: flex;
+ flex-direction: column;
+
+}
+
+.credits {
+  font-size: 0.6rem;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  font-weight: normal;
+  font-size: 4rem;
+}
+
+h1 {
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+}
+
+h3 {
+ 
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+
+.center-text {
+  text-align: center;
+}
+
+.work {
+  width: 65%;
+  display: inline;
+  align-items: center;
+  float: right;
+  margin-right: 100px;
+}
+
+p {
+  font-size: 18px;
 }
 
 .text-body{
@@ -21,17 +218,8 @@ padding-left: 300px;
 padding-right: 300px;
 }
 
-.ring-body h1{
-font-size: 100px;
-margin: 10px;
-}
-.ring-body h2{
-  font-size: 60px;
-  margin: 10px;
-}
-.ring-body h3{
-  font-size: 30px;
-}
+
+
 .mini-heading{
   font-size: 20px;
 }
@@ -42,172 +230,30 @@ background-color: #72A4B9;
 font-style: italic;
 }
 
-.head{
-  text-align: center;
-  font-weight: bolder;
-}
 
-.flex {
-  display: flex;
-}
-
-.grow {
-  flex-grow: 1;
-}
-
-.shrink {
-  flex-grow: 0;
-}
-
-.hello {
-  font-size: 150px;
-  color: #dee0e3;
-}
-
-.brendon p {
-  margin: 0px;
-}
-
-.brendon {
-  font-weight: bolder;
-  text-align: left;
-  padding-left: 100px;
-  padding-top: 250px;
-  padding-bottom: 250px;
-  font-size: 70px;
-  color: #dee0e3;
-  margin: 0px;
+.header3 {
+  position: relative;
+  background-image: url(Images/blueprints.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
 }
 
 
-.sidebar {
-   position: sticky;
-   top: 0;
-   z-index: 100;
-  padding: 10px;
-  text-align: center;
-  margin-top: 5px
+.big-text{
+  font-size: 3rem;
 }
 
-nav ul{
-  float: right;
-  list-style-type: none;
-  text-align: center;
-  padding-right: 15px;
-  padding-top: 15%;
-  padding-bottom: auto;
+button {
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  background-color: white;
 }
 
-nav ul li{
-  padding: 10px;
-}
-
-nav ul li a{
-  font-size: 20px;
-  text-decoration: none;
-  color: #dee0e3;
-}
-
-.overlay-slide {
-	position: relative;
-}
-
-.overlay-slide:hover .overlayText {
-  top: 0;
-	transition: all 0.2s ease-in;
-}
-
-.overlayText {
-	position: absolute;
-  top: 100%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-overflow: hidden;
-    background-color: #021736;
-    text-align:center;
-    transition: all 0.2s ease-in;
-}
-
-.overlay-slide p {
-    font-size: 30px;
-    color: #dddddd;
-}
-
-.gameEntry{
-  background-color: #5F85AB;
-  display: flex;
-  flex-direction: row;
-  padding-top: 15px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 15px;
-}
-
-.blogEntry {
-  display: flex;
-  float: left;
-  width: 26%;
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
-
-.blog-grid {
-  padding-left: 100px;
-  background-color: #547AA0;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.blog-grid::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.secondaryImageContainer{
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  height: auto;
-  gap: 0px;
-}
-
-.pic1 {
-  width: 550px;
-  height: 380px;
-  flex-grow: 0;
-  object-fit: fill;
-  margin: 10px;
-  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
-  border-radius: 0.375rem;
-}
-
-.pic2 {
-  width: 278px;
-  height: 175px;
-  object-fit: fill;
-  margin: 10px;
-  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
-  border-radius: 0.375rem;
-}
-
-.pic4{
-  width: 550px;
-  height: 380px;
-  flex-grow: 0;
-  object-fit: cover;
-  margin: 10px;
- filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
-  border-radius: 0.375rem;
-  float: left;
-}
-
-
-.pic5 {
-  width: 100%;
-  height: 380px;
-  object-fit: cover;
-  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
-  border-radius: 0.375rem;
+button:hover {
+  background-color: black;
+  color: aliceblue;
 }

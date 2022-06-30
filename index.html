@@ -11,288 +11,86 @@
     />
 
     <title>Brendonmustdie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="button.js"></script>
   </head>
 
- 
-
   <body>
-    <div class="flex">
-      <div class="grow">  <a id="home-link">
+    <div class="header">
+      <div class="overlay overlay-white"></div>
+      <!-- Nav Bar -->
+      <nav>
+        <ul>
+          <li><a href="oneRing.html">MyWork</a></li>
+          <li><a href="aboutme.html">AboutMe</a></li>
+          <li><a href="blog1.html">MyBlog</a></li>
+        </ul>
+      </nav>
 
-        <button class="button" onclick="backButton()"> Back </button>
-        <div class="brendon">
-        
-          <div class="hello">Hello!</div>
-          <p>I'm Brendon</p>
-          </a>
-        </div>
-
-         <!-- Portfolio Stuff, First Game Entry-->
-<div class="game-section"></div>
-         <a id="stuff-link">
-        <div class="gameEntry">
-          <a href="oneRing.html">  <div class="overlay-slide">
-            <img
-              class="pic1"
-              src="Images/OneRingSample.png"
-              alt="A Screenshot of The One Ring prototype"
-            />
-            <div class="overlayText">
-              <p>The One Ring : <br> Prototype </p>
-            </div>
-          </div>   </a>
-         
-        </a>
-          <div class="secondaryImageContainer">
-            <a href="oneRing.html">
-            <div class="overlay-slide">
-              <img
-                class="pic2"
-                src= "Images/OneRingShrink.png"
-                alt="A Screenshot of The One Ring prototype"
-              />
-              <div class="overlayText">
-                <p>
-                  The One Ring: <br />
-                  Honey, I shrank the ring.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="oneRing.html">
-            <div class="overlay-slide">
-              <img
-                class="pic2"
-                src="Images/OneRingGrow.png"
-                alt="A Screenshot of The One Ring prototype"
-              />
-              <div class="overlayText">
-                <p>
-                  The One Ring: <br />
-                  Mega Ring
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="oneRing.html">
-            <div class="overlay-slide">
-              <img
-                class="pic2"
-                src="Images/OneRingInvisible.png"
-                alt="A Screenshot of The One Ring prototype"
-              />
-              <div class="overlayText">
-                <p>
-                  The One Ring: <br />
-                  Disappearing Act
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="oneRing.html">
-            <div class="overlay-slide">
-              <img
-                class="pic2"
-                src="Images/OneRingChaos.png"
-                alt="A Screenshot of The One Ring prototype"
-              />
-              <div class="overlayText">
-                <p>
-                  The One Ring: <br />
-                  Chaos
-                </p>
-              </div>
-            </div>
-          </a>
-          </div>
+      <!--Title-->
+      <div class="titles">
+        <div class="center-text">
+          <h2>
+            Brendonmustdie's <br>
+            Game Design 
+            Portfolio
+          </h1>
         </div>
       </div>
     </div>
 
-    <!-- Secong Game Entry-->
-    <div class="gameEntry">
-      <a href="procGen.html">
-      <div class="overlay-slide">
-        <img
-          class="pic1"
-          src="Images/procGen1.png"
-          alt="A Screenshot of 3D Procedurally Generator Rooms"
-        />
-        <div class="overlayText">
-          <p>Procedurally Generated  Dungeons</p>
-        </div>
-      </div>
-    </a>
-      <div class="secondaryImageContainer">
-        <a href="procGen.html">
-        <div class="overlay-slide">
-          <img
-            class="pic2"
-            src="Images/procGen2.png"
-          alt="A Screenshot of 3D Procedurally Generator Rooms"
-          />
-          <div class="overlayText">
-            <p>Procedural Generation: <br> An Attempt</p>
-          </div>
-        </div>
-      </a>
-      <a href="procGen.html">
-        <div class="overlay-slide">
-          <img
-          class="pic2"
-          src="Images/procGen3.png"
-          alt="A Screenshot of 3D Procedurally Generator Rooms"
-        />
-        <div class="overlayText">
-          <p>Procedural Generation: <br> Depth First Search</p>
-        </div>
-        </div>
-      </a>
-      <a href="procGen.html">
-        <div class="overlay-slide">
-          <img
-          class="pic2"
-          src= "Images/procGen4.png"
-          alt="A Screenshot of 3D Procedurally Generator Rooms"
-        />
-        <div class="overlayText">
-          <p>Procedural Generation: <br> Breadth First Search</p>
-        </div>
-        </div>
-      </a>
-      <a href="procGen.html">
-        <div class="overlay-slide">
-          <img
-            class="pic2"
-            src="Images/proGen5.png"
-            alt="A Screenshot of 3D Procedurally Generator Rooms"
-          />
-          <div class="overlayText">
-            <p>Procedural Generation: <br> Diijkstra's Algorithm</p>
-          </div>
-        </div>
-      </div>
-    </a>
-    </div>
-  </div>
 
-  
-  <!--Blog posts -->
+<!--Games Section-->
 
-  <a id="blog-link">
-  <div class="blog-grid">
-
-    
-    <div class="blogEntry">
-   <a href="blog1.html">
-    <div class="overlay-slide">
+<div class="portfolio">
+  <div class="project-section">
+  <a href="oneRing.html">
       <img
-        class="pic5"
-        src="Images/Blog1_cover.png"
-        alt="A blank, white image"
+        class="section-image"
+        src="Images/university.jpg"
+        alt="An image of a university"
       />
-      <div class="overlayText">
-        <p>Week 2: <br> I Think We Would Kill Vannaver Bush.</p>
-      </div>
-    </div>
   </a>
-  </div>
-    </a>
-  
-  <div class="blogEntry">
-  <a href="blog2.html">
-    <div class="overlay-slide">
-      <img
-        class="pic5"
-        src="Images/Blog2_cover.jpg"
-        alt="A blank, white image"
-      />
-      <div class="overlayText">
-        <p> Week 4: <br> What is a Browser?</p>
-      </div>
-    </div>
-  </a>
+  <p class="credits">"Toronto: University College" by The City of Toronto is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.</p>
+  <h3>University Projects</h3>
+  <p>The projects I've made for classes!</p>
   </div>
   
-  <div class="blogEntry">
-  <a href="blog3.html">
-    <div class="overlay-slide">
-      <img
-        class="pic5"
-        src="Images/Blog3_cover.png"
-        alt="A blank, white image"
-      />
-      <div class="overlayText">
-        <p>Week 6: <br> Accessibility</p>
-      </div>
-    </div>
+ <div class="project-section">
+  <a href="nothingHere.html">
+    <img
+    class="section-image"
+      src="Images/game-jam.jpg"
+      alt="People seated at a table, around two bottles of cokes"
+    />
   </a>
+  <p class="credits">"The game" by kevin dooley is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.</p>
+  <h3>Game Jam Projects</h3>
+  <p>There's nothing to see here yet! <br> But there will be soon!</p>
   </div>
   
-  <div class="blogEntry">
-  <a href="blog4.html">
-    <div class="overlay-slide">
-      <img
-        class="pic5"
-        src="Images/Blog4_cover.png"
-        alt="A blank, white image"
-      />
-      <div class="overlayText">
-        <p>Week 9: <br> Geography of Information</p>
-      </div>
-    </div>
+  <div class="project-section">
+  <a href="nothingHere.html">
+    <img
+    class="section-image"
+      src="Images/self.jpg"
+      alt="A picture of Brendonmustdie, stretching their mouth wide"
+    />
   </a>
+  <h3>Personal Projects</h3>
+  <p>There's nothing to see here yet! <br> But there will be soon!</p>
   </div>
-  
-  <div class="blogEntry">
-  <a href="blog5.html">
-    <div class="overlay-slide">
-      <img
-        class="pic5"
-        src="Images/Blog5_cover.png"
-        alt="A blank, white image"
-      />
-      <div class="overlayText">
-        <p>Week 12: <br> UI and UX</p>
-      </div>
-    </div>
-  </a>
-  </div>
-  
-  <div class="blogEntry">
-  <a href="blog6.html">
-    <div class="overlay-slide">
-      <img
-        class="pic5"
-        src="Images/Blog6_cover.png"
-        alt="A blank, white image"
-      />
-      <div class="overlayText">
-        <p>Week 14: <br> Artifacts have politics</p>
-      </div>
-    </div>
-  </a>
-  </div>
+</div>
 
-  <div class="blogEntry">
-    <a href="design.html">
-      <div class="overlay-slide">
-        <img
-          class="pic5"
-          src="Images/Blog7_cover.png"
-          alt="A blank, white image"
-        />
-        <div class="overlayText">
-          <p>Blog Post: <br> Design Section</p>
-        </div>
-      </div>
-    </a>
-    </div>
-      
-  </div>
+ 
   
+
   </body>
 </html>

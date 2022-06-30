@@ -10,66 +10,106 @@
       content="Welcome to Brendonmustdie's Digital Art Portfolio"
     />
 
-    <title>Brendonmustdie</title>
+    <title>Proc Gen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-</html>
 
-<body>
-  <div class="flex">
-    <div class="grow">
-      <div class="text-body">
-        <h1 class="head">Procedurally Generated 3D Maze:</h1>
-        <h2 class="head">The Development Log:</h2>
-        <h3 class="head">Concept:</h3>
-
-        <p>
-          For an assignment I created a “procedural generation algorithim” which
-          used prefabs in unity to spawn rooms where I wanted them. I add
-          empties in my prefabs, and in code set which opening they were in, and
-          which rooms could therefore instantiate. I then wrote a function to
-          randomly instantiate rooms from arrays. At the time, I was pretty
-          happy with this idea, however I encountered some technical problems:
-        </p>
-        <p>
-          - Sometimes the rooms spawnned at different heights, and were tilted
-          at strange angles.
-        </p>
-        <p>- It wouldn’t open in a build.</p>
-        <p>
-          Procedural generation interests me and I’m spending more time figuring
-          out ways to do it.
-        </p>
-        <img
-          class="pic5"
-          src="Images/procGen1.png"
-          alt="A screenshot of the Procedural Generation Prototype"
-        />
-
-        <h3 class="head">Log 001 2022/05/03:</h3>
-        <p>
-          I researched Depth First Search, on the instruction of a lecturer, and
-          I’m excited about what it could mean. If I could build a grid, and use
-          a system like DFS, I could randomly generate a maze! And slightly
-          altering that could make a dungeon!
-        </p>
-
-        <img
-          class="pic5"
-          src="Images/procGen2.png"
-          alt="A screenshot of the Procedural Generation Prototype"
-        />
-      </div>
-    </div>
-    <div class="shrink">
-      <div class="sidebar">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-          </ul>
-        </nav>
+  <body><body>
+  
+    <div class="header2">
+      <video class="video-overlay" id="one-ring-video"  muted="muted">
+        <source src="Images/Prototype 0.03.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    <div class="overlay ring-background-image" id="ring-background-overlay"></div>
+    <!-- Nav Bar -->
+    <nav>
+      <ul>
+        <li><a href="index.html">MyWork</a></li>
+        <li><a href="aboutme.html">AboutMe</a></li>
+        <li><a href="blog1.html">MyBlog</a></li>
+      </ul>
+    </nav>
+  
+    <!--Title-->
+    <div class="titles">
+      <div class="center-text">
+        <h2>
+         Procedural Generation
+        </h1>
       </div>
     </div>
   </div>
-</body>
+  
+  
+  <section> <div class="nav-vert">
+    <ul>
+      <h1>University Work:</h1>
+      <li><a href="oneRing.html">3D Ring Game</a></li>
+      <li><a href="procGen.html">Procedural<br> Generation</a></li>
+    </ul>
+  </div>
+  
+  
+   <div class="work"> 
+    
+    <h1 class="center-text">Procedurally Generated 3D Maze:</h1>
+    <h2 class="center-text">The Development Log:</h2>
+    <h3 class="center-text">Concept:</h3>
+
+    <p>
+      For an assignment I created a “procedural generation algorithim” which
+      used prefabs in unity to spawn rooms where I wanted them. I add
+      empties in my prefabs, and in code set which opening they were in, and
+      which rooms could therefore instantiate. I then wrote a function to
+      randomly instantiate rooms from arrays. At the time, I was pretty
+      happy with this idea, however I encountered some technical problems:
+    </p>
+    <p>
+      - Sometimes the rooms spawnned at different heights, and were tilted
+      at strange angles.
+    </p>
+    <p>- It wouldn’t open in a build.</p>
+    <p>
+      Procedural generation interests me and I’m spending more time figuring
+      out ways to do it.
+    </p>
+    <img
+      class="pic5"
+      src="Images/procGen1.png"
+      alt="A screenshot of the Procedural Generation Prototype"
+    />
+
+    <h3 class="head">Log 001 2022/05/03:</h3>
+    <p>
+      I researched Depth First Search, on the instruction of a lecturer, and
+      I’m excited about what it could mean. If I could build a grid, and use
+      a system like DFS, I could randomly generate a maze! And slightly
+      altering that could make a dungeon!
+    </p>
+
+    <img
+      class="pic5"
+      src="Images/procGen2.png"
+      alt="A screenshot of the Procedural Generation Prototype"
+    />
+  
+  </div></section>
+   
+  
+  
+    
+  
+  
+  
+  
+  
+  <script src="video.js"></script></body>
+</html>

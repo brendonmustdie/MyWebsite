@@ -17,13 +17,23 @@ body {
   z-index: 1;
 }
 
-.overlay-white {
-  background-color: white;
+.portfolio {
+z-index: 6;
+}
+
+.overlay-black {
+  background-color: black;
   opacity: 20%;
 }
+
+.overlay-white {
+  background-color: black;
+  opacity: 30%;
+}
 .overlay-white2 {
-  background-color: white;
+  background-color: black;
   opacity: 40%;
+  
 }
 
 @keyframes fade-out {
@@ -54,6 +64,36 @@ body {
   z-index: 0;
 }
 
+.icon {
+ 
+  width: 200px;
+  height: 200px;
+  z-index: 5;
+  
+}
+
+.person-icon {
+  fill: #A37C66;
+}
+
+.puzzle-icon {
+  fill: #856650;
+}
+
+.gear-icon {
+  fill: #675039;
+}
+
+.about-me{
+  width: 100%;
+}
+.about-me-section {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  float: left;
+}
+
 .header {
   position: relative;
   background-image: url(Images/laptop_coffee_header.png);
@@ -62,6 +102,18 @@ body {
  height: 100vh;
  display: flex;
  flex-direction: column;
+ color: white;
+}
+
+.header4 {
+  position: relative;
+  background-image: url(Images/self.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ color: white;
 }
 
 .titles {
@@ -74,18 +126,30 @@ body {
 
 /*nav*/
 
+.flex{
+  display: flex;
+}
+
 .nav-vert {
-  width: 15%;
-  margin-left: 120px;
-  align-items: center;
-  display: inline;
-  float: left;
+ flex: none;
+ margin-left: 40px;
+}
+
+.nav-vert ul {
+display: flex;
+flex-direction: column;
+}
+
+.work{
+	flex: 1 1 0%;
 }
 
 nav , .nav-vert { 
   flex: none;
   z-index: 2;
 }
+
+
 nav ul{
   display: flex;
   justify-content: flex-end;
@@ -104,18 +168,19 @@ nav ul li a{
   font-size: 2rem;
   text-decoration: none;
   margin: 30px;
-  color: black;
+  color: white;
 }
 
  .nav-vert ul li a{
   font-size: 1.6rem;
   text-decoration: none;
-  margin: 30px;
   color: black;
 }
 
-
-nav ul li a:hover , .nav-vert ul li a:hover{
+nav ul li a:hover {
+  color: black;
+}
+.nav-vert ul li a:hover{
  
   color: gray;
 }
@@ -124,11 +189,12 @@ nav ul li a:hover , .nav-vert ul li a:hover{
 .nav-vert ul{
   display: block;
   list-style-type: none;
-  margin-top: 100px;
+ padding: 0%;
 }
 
 
 /* sections */
+
 
 
 .section-image {
@@ -139,15 +205,44 @@ nav ul li a:hover , .nav-vert ul li a:hover{
   align-self: center;
 }
 
+.section-icon{
+  width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+  aspect-ratio: 2;
+  z-index: 5;
+}
+
+.bold-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
 .project-section {
   width: 30%;
  display: inline;
  margin: 10px;
  align-items: center;
+
+}
+
+.skills{
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.icon-section {
+  background-color: #BF9D8A;
+  opacity: 90%;
+  z-index: 4;
+  border-radius: 20px;
+  padding: 20px 32px;
 }
 
 .project-section p, .project-section h3 {
   text-align: center;
+  z-index: 5;
 }
 
 
@@ -169,6 +264,7 @@ nav ul li a:hover , .nav-vert ul li a:hover{
  height: 50vh;
  display: flex;
  flex-direction: column;
+ color: white;
 
 }
 
@@ -179,14 +275,14 @@ nav ul li a:hover , .nav-vert ul li a:hover{
 h2 {
   font-family: 'Oswald', sans-serif;
   color: black;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 4rem;
 }
 
 h1 {
   
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 3rem;
 }
 
@@ -226,8 +322,10 @@ padding-right: 300px;
 
 .extra-info{
   padding: 10px;
-background-color: #72A4B9;
+  background-color: #BF9D8A;
+border-radius: 10px;
 font-style: italic;
+color: white;
 }
 
 
